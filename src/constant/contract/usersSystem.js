@@ -1,0 +1,4 @@
+export const systemDepositWallet = '0xBc1E664b55097eFFB6532cD6dB252A711A94663F'
+export const systemDepositWalletProduction = '0x5c4C3bAD96f485694eb459AC77B5FF454b65e33a'
+export const systemWithdrawWallet = '0xA71Af07EB156074E32d4E3bFE58f75B045ED034a'
+export const systemWithdrawWalletProduction = '0x3091a7ce03267AD8cA0E2265f57F6c779eD3A791'

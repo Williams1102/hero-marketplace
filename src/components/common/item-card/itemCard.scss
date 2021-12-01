@@ -1,0 +1,166 @@
+.new-item-card {
+  cursor: pointer;
+  position: relative;
+  width: 100%;
+  border-radius: 25px;
+  overflow: hidden;
+  background: rgba(38, 38, 38, 0.7);
+  border: 1px solid #655c0b;
+  // padding: 6.66% 8.33%;
+  &-background {
+    position: relative;
+    width: 90%;
+    z-index: -100;
+  }
+  &-id-container {
+    z-index: 2;
+    position: absolute;
+    right: 0;
+    width: 22%;
+  }
+  &-id {
+    z-index: 3;
+    top: 0.6vw;
+    right: 0.6vw;
+    position: absolute;
+    font-family: "DM Serif Display", serif;
+    font-size: 1.1vw;
+    line-height: 1.3vw;
+    font-weight: 400;
+
+    transform: rotate(45deg);
+    color: #f9da9c;
+  }
+  &-level {
+    z-index: 2;
+    font-family: "DM Serif Display", serif;
+    font-size: 1.1vw;
+    line-height: 1.3vw;
+    font-weight: 400;
+    color: #f9da9c;
+    position: absolute;
+    top: 4.5%;
+    left: 48%;
+  }
+  &-element-background {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+  }
+  &-name {
+    color: linear-gradient(#f6d49f, #fff6e0, #f6d49f, #fff6e0, #f6d49f);
+    font-family: "Rajdhani", sans-serif;
+    font-size: 1.3vw;
+    line-height: 1.6vw;
+    font-weight: normal;
+    color: #ffffff;
+    z-index: 2;
+    position: absolute;
+    top: 74%;
+    left: 8.33%;
+    width: 100%;
+    display: flex;
+  }
+  &-element {
+    z-index: 2;
+    position: absolute;
+    width: 15%;
+    left: 3.5%;
+    top: 58.5%;
+  }
+  &-type {
+    z-index: 2;
+    position: absolute;
+    width: 15%;
+    right: 3.5%;
+    top: 58.5%;
+  }
+  &-item-image {
+    z-index: 3;
+    position: absolute;
+    width: 46.34%;
+    left: 26.33%;
+    top: 16.66%;
+    border-radius: 12px;
+  }
+  &-price {
+    img {
+      width: 1.5vw;
+      height: 1.5vw;
+    }
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    z-index: 2;
+    position: absolute;
+
+    font-family: "Rajdhani", sans-serif;
+    font-size: 1.1vw;
+    line-height: 1.3vw;
+    font-weight: 400;
+    color: #f9da9c;
+    top: 83%;
+    right: 8.33%;
+    background: rgba(255, 207, 61, 0.2);
+    border-radius: 30px;
+    padding: 6px 4px;
+  }
+  &-quantity {
+    // text-align: center;
+    z-index: 2;
+    padding: 6px 4px 6px 0px;
+    position: absolute;
+    width: 100%;
+    font-family: "Rajdhani", sans-serif;
+    font-size: 1.1vw;
+    line-height: 1.3vw;
+    font-weight: 100;
+    color: #ffffff;
+    top: 83%;
+    left: 8.33%;
+  }
+  &-skill {
+    display: flex;
+    justify-content: space-between;
+    z-index: 2;
+    position: absolute;
+    width: 74.4%;
+    top: 85%;
+    left: 12.8%;
+    img {
+      border-radius: 10px;
+      width: 18%;
+    }
+  }
+}
+@media (max-width: 500px) {
+  .new-item-card {
+    &-id {
+      font-size: 4vw;
+      line-height: 5vw;
+    }
+    &-name {
+      font-size: 3vw;
+      line-height: 4vw;
+    }
+    &-level {
+      font-size: 3vw;
+      line-height: 4vw;
+      top: 1.8vw;
+    }
+    &-quantity {
+      font-size: 3vw;
+      line-height: 4vw;
+    }
+    &-price {
+      img {
+        width: 20px;
+        height: 20px;
+      }
+      font-size: 3vw;
+      line-height: 4vw;
+    }
+  }
+}

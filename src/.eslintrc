@@ -1,0 +1,33 @@
+// {
+//     "parser": "babel-eslint",
+//     "extends": ["standard", "standard-react"],
+//     "plugins": ["babel", "react", "promise"],
+//     "env": {
+//       "browser": true
+//     },
+//     "globals": {
+//       "__DEV__": false,
+//       "__TEST__": false,
+//       "__PROD__": false,
+//       "__COVERAGE__": false
+//     },
+//     "rules": {
+//       "key-spacing": [2, { "beforeColon": false }],
+//       "indent": "off",
+//       "jsx-quotes": [2, "prefer-double"],
+//       "quotes": [2, "double"],
+//       "max-len": [2, 120, 2],
+//       "object-curly-spacing": [2, "always"],
+//       "comma-dangle": [1, "always-multiline"],
+//       "semi": [1, "always"],
+//       "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
+//       "space-before-function-paren": [
+//         "error",
+//         {
+//           "anonymous": "never",
+//           "named": "never",
+//           "asyncArrow": "always"
+//         }
+//       ]
+//     }
+//   }

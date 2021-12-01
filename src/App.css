@@ -1,0 +1,18 @@
+body {
+  font-family: 'Roboto';
+  padding: 0;
+  position: relative;
+  /* padding: 20px 40px; */
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+* {
+  box-sizing: border-box;
+}
+.font-face-ac {
+  font-family: 'American Captain';
+}

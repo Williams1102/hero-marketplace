@@ -1,0 +1,39 @@
+.common-pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+  &-button {
+    cursor: pointer;
+    user-select: none;
+    margin-left: 5px;
+    margin-right: 5px;
+    padding: 5px;
+    font-family: "Rajdhani", sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 30px;
+    color: #ffffff;
+  }
+  &-page {
+    margin-left: 5px;
+    margin-right: 5px;
+    cursor: pointer;
+    font-family: "Rajdhani", sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 30px;
+    color: #ffffff;
+  }
+  &-button:hover {
+    background: radial-gradient(
+        50% 50% at 50% 50%,
+        #5f5537 0%,
+        rgba(95, 85, 55, 0) 100%
+      ),
+      rgba(57, 51, 30, 0.8);
+    border: 0px solid #665807;
+    box-sizing: border-box;
+    border-radius: 12px;
+  }
+}

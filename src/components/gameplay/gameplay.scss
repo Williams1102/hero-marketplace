@@ -1,0 +1,370 @@
+.gameplay-page {
+  margin-top: -50px;
+  .fam-font {
+    font-family: "Roboto";
+  }
+  .cpn-head {
+    -webkit-animation: fadeInUp 2s linear;
+    animation: fadeInUp 2s linear;
+    text-align: center;
+    top: 50vh;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    .cpn-head-title {
+      font-size: 60px;
+      color: #fff;
+      line-height: 68px;
+      font-weight: bold;
+      font-family: "Rajdhani";
+      font-style: normal;
+      text-transform: uppercase;
+      span {
+        color: #ffcf3d;
+      }
+    }
+  }
+  .what-is-kaby {
+    margin-top: 100px;
+  }
+  .gameplay-bg {
+    background-image: url("/images/new_gameplay-bg.png");
+    background-position: 50% 100%;
+    background-repeat: no-repeat;
+    padding-top: 50px;
+  }
+  .feature.feature-s2 {
+    img {
+      width: 60px;
+      height: 60px;
+    }
+  }
+  .feature-gameplay {
+    margin-top: -400px;
+  }
+  .gameplay-begin {
+    text-align: left !important;
+    width: 90% !important;
+    padding-bottom: 60px !important;
+    margin-top: -240px;
+    .fam-font {
+      color: white;
+    }
+    div {
+      margin-top: 50px;
+    }
+    p {
+      color: #fff;
+    }
+  }
+
+  .feature-text {
+    h5 {
+      color: #fff;
+    }
+    p {
+      color: rgba(177, 174, 191, 1);
+    }
+  }
+  .nk-block-img {
+    -webkit-animation: fadeInUp 2s linear;
+    animation: fadeInUp 2s linear;
+    animation-delay: 1s;
+    margin-top: -50px;
+    .card-feature2 {
+      // width: 594px !important;
+      // height: 502px !important;
+      max-width: 100%;
+      margin-left: 30px;
+    }
+  }
+  .nk-block-text {
+    -webkit-animation: fadeInUp 2s linear;
+    animation: fadeInUp 2s linear;
+    animation-delay: 1s;
+
+    .fam-font {
+      text-align: left !important;
+      width: 90% !important;
+      color: #000;
+      font-family: "Rajdhani";
+      font-style: normal;
+      font-weight: bold;
+      font-size: 48px;
+      line-height: 48px;
+      text-transform: uppercase;
+    }
+  }
+  .list-check-pvp {
+    li {
+      img {
+        width: 20px;
+        height: 20px;
+        margin-right: 5px;
+      }
+    }
+  }
+  .list-hero-bg {
+    background-image: url("/images/list-hero-bg.png");
+    background-size: cover;
+    background-position: 50% 100%;
+
+    @media (min-width: 500px) {
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: 0% 0%;
+    }
+
+    .list-hero-title {
+      color: #fff;
+
+      &:after {
+        position: absolute;
+        left: 42%;
+        bottom: 0;
+        content: "";
+        width: 183px;
+        height: 8px;
+        background-image: url("/images/yellow-gameplay.png");
+        @media (max-width: 500px) {
+          left: 30%;
+        }
+      }
+      @media (max-width: 500px) {
+        padding-top: 60px;
+      }
+    }
+  }
+
+  .trailer-dark-bg {
+    background: linear-gradient(
+        0deg,
+        rgba(54, 46, 117, 0.7) 0%,
+        rgba(59, 52, 118, 0) 69.92%
+      ),
+      #1a162d;
+    padding-bottom: 300px;
+  }
+  .arrow-btn {
+    display: none;
+  }
+  .mobile {
+    display: none;
+    @media (max-width: 500px) {
+      padding: 10px;
+      .arrow-btn {
+        &:focus {
+          background: transparent;
+          color: white;
+        }
+        display: block;
+        width: 40px;
+        min-width: 40px !important;
+        border-radius: 50%;
+        margin: 5px;
+      }
+    }
+  }
+  @media (max-width: 500px) {
+    .center {
+      max-width: 80% !important;
+      background-image: url("/images/center-carousel.png");
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: 50% 100%;
+      padding-bottom: 100px;
+    }
+  }
+  @media (min-width: 500px) {
+    .center {
+      width: 600px !important;
+      .owl-item {
+        margin-right: 0px !important;
+      }
+      .row {
+        width: 600px !important;
+
+        .arrow-btn {
+          display: block;
+          width: 40px;
+          min-width: 40px !important;
+          border-radius: 50%;
+          margin: 5px;
+          padding: 0.375rem 0.75rem;
+          border-color: #f8f9fa;
+        }
+        .item {
+          width: 500px !important;
+          height: 550px;
+          background-image: url("/images/center-carousel.png");
+          background-size: cover;
+          background-repeat: no-repeat;
+          background-position: center center;
+        }
+      }
+    }
+  }
+
+  .doc-photo {
+    width: 240px;
+  }
+  .owl-item {
+    -webkit-animation: fadeInUp 2s linear;
+    animation: fadeInUp 2s linear;
+    animation-delay: 2s;
+  }
+}
+/* FadeAnimation */
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadeInUp {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 40px, 0);
+    transform: translate3d(0, 40px, 0);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 40px, 0);
+    transform: translate3d(0, 40px, 0);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@-webkit-keyframes fadeInDown {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -40px, 0);
+    transform: translate3d(0, -40px, 0);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -40px, 0);
+    transform: translate3d(0, -40px, 0);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@-webkit-keyframes fadeInRight {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(40px, 0, 0);
+    transform: translate3d(40px, 0, 0);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(40px, 0, 0);
+    transform: translate3d(40px, 0, 0);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@-webkit-keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(-40px, 0, 0);
+    transform: translate3d(-40px, 0, 0);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(-40px, 0, 0);
+    transform: translate3d(-40px, 0, 0);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+@media (max-width: 991px) {
+  .box-pad {
+    -webkit-animation: fadeInUp 2s linear;
+    animation: fadeInUp 2s linear;
+    padding-top: 0px;
+    padding-bottom: 60px;
+  }
+  .gameplay-page {
+    .nk-pages {
+      .what-is-kaby {
+        flex-direction: column-reverse !important;
+        .feature-gameplay {
+          margin-top: 0;
+          padding-bottom: 100px;
+        }
+      }
+    }
+  }
+}
+// @media (max-width: 600px) {
+//   .gameplay-page {
+//     .bg-white {
+//       .nk-block-img {
+//         .card-feature2 {
+//           max-width: 90%;
+//         }
+//       }
+//     }
+//   }
+// }

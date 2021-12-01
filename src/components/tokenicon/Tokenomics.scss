@@ -1,0 +1,305 @@
+.tokenomics-content {
+  margin-bottom: 300px;
+  margin-top: -100px;
+  .cpn-head {
+    -webkit-animation: fadeInUp 2s linear;
+    animation: fadeInUp 2s linear;
+    text-align: center;
+    top: 50vh;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    .cpn-head-title {
+      font-family: Rajdhani;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 60px;
+      line-height: 68px;
+      text-transform: uppercase;
+      color: #ffffff;
+      strong {
+        color: #ffcf3d;
+      }
+    }
+  }
+
+  .tokenomics-content-header {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    span.tokenomics-content-header-down {
+      font-size: 16px;
+      line-height: 24px;
+      font-weight: 400;
+      color: #415076;
+    }
+    span.tokenomics-content-header-up {
+      font-size: 28px;
+      line-height: 36px;
+      font-weight: 500;
+      color: #5b53a2;
+    }
+  }
+  .fam-font {
+    margin-left: 10%;
+    font-family: "Rajdhani";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 48px;
+    @media (max-width: 500px) {
+      font-size: 36px;
+      line-height: 36px;
+    }
+    text-transform: uppercase;
+
+    padding-bottom: 20px;
+  }
+  .tokenomics-content-body {
+    display: flex;
+    padding-top: 73.85px;
+    padding-bottom: 100px;
+    padding-left: 30px;
+    padding-right: 30px;
+    background-image: url("/images/tokenomics-content-bg.png");
+    background-position: 0% 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    .img-fluid {
+      -webkit-animation: fadeInUp 2s linear;
+      animation: fadeInUp 2s linear;
+      animation-delay: 0.75s;
+      max-width: 90%;
+    }
+    .intro {
+      margin-top: -100px;
+      width: 100%;
+      .title-s2 {
+        color: #ffffff;
+        &:after {
+          width: 200px;
+          height: 14px;
+        }
+      }
+
+      .intro-content {
+        z-index: 1;
+        -webkit-animation: fadeInUp 2s linear;
+        animation: fadeInUp 2s linear;
+        animation-delay: 0.75s;
+        .intro-text {
+          h5 {
+            margin-top: 20px;
+            margin-left: 0px;
+            color: #fff;
+            font-size: 20px;
+            line-height: 28px;
+            font-weight: 500;
+          }
+          ul {
+            font-size: 16px;
+            line-height: 24px;
+            color: #b1aebf;
+            margin-top: 0;
+            margin-left: 25px;
+            width: 65%;
+            @media (max-width: 500px) {
+              width: 100%;
+              margin-left: 40px;
+            }
+            li {
+              margin-bottom: 8px;
+              font-size: 16px;
+              line-height: 24px;
+              font-weight: 500;
+
+              &::before {
+                content: "";
+                display: inline-block;
+                height: 16px;
+                width: 16px;
+                background-image: url("/images/check-circle-green.png");
+                background-position: center;
+                background-size: contain;
+                margin-right: 5px;
+                margin-left: -25px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .tokenomics-chart {
+    -webkit-animation: fadeInUp 2s linear;
+    animation: fadeInUp 2s linear;
+    animation-delay: 1s;
+    margin-top: 100px;
+    padding-left: 30px;
+    padding-right: 30px;
+    //height: 700px;
+    .tokenomics-overview {
+      .title-s2 {
+        color: #000;
+        &:after {
+          width: 200px;
+          height: 14px;
+          margin-left: 50px;
+        }
+      }
+    }
+  }
+}
+
+// .contact-us-wrapper {
+//   -webkit-animation: fadeInUp 2s linear;
+//   animation: fadeInUp 2s linear;
+//   border-radius: 8px;
+//   border: 1px solid #b3912ae4;
+//   position: fixed;
+//   right: 2px;
+//   top: 300px;
+//   background: #262626;
+//   opacity: 0.7;
+//   * {
+//     background: transparent;
+//   }
+//   .nav-contact-network {
+//     .icons-fa-bg {
+//       padding: 15px;
+//       margin-top: 20px;
+//     }
+//     .contact-icon {
+//       width: 25px;
+//       height: 25px;
+//       color: #ffef61;
+//     }
+//   }
+// }
+
+/* FadeAnimation */
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadeInUp {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 40px, 0);
+    transform: translate3d(0, 40px, 0);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 40px, 0);
+    transform: translate3d(0, 40px, 0);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@-webkit-keyframes fadeInDown {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -40px, 0);
+    transform: translate3d(0, -40px, 0);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -40px, 0);
+    transform: translate3d(0, -40px, 0);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@-webkit-keyframes fadeInRight {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(40px, 0, 0);
+    transform: translate3d(40px, 0, 0);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(40px, 0, 0);
+    transform: translate3d(40px, 0, 0);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@-webkit-keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(-40px, 0, 0);
+    transform: translate3d(-40px, 0, 0);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(-40px, 0, 0);
+    transform: translate3d(-40px, 0, 0);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}

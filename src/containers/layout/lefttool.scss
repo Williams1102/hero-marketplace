@@ -1,0 +1,40 @@
+.contact-us-wrapper {
+  z-index: 4;
+  -webkit-animation: fadeInUp 0.3s linear;
+  animation: fadeInUp 0.3s linear;
+  border-radius: 8px;
+  border: 1px solid #b3912ae4;
+  position: fixed;
+  right: 2px;
+  top: 300px;
+  background: #262626;
+  opacity: 0.7;
+  * {
+    background: transparent;
+  }
+  .nav-contact-network {
+    .icons-fa-bg {
+      padding: 8px;
+      margin-top: 20px;
+      .contact-icon-link {
+        .icon-area {
+          background: transparent;
+        }
+      }
+    }
+    .contact-icon {
+      width: 25px;
+      height: 25px;
+      color: #ffef61;
+      margin-left: 4px;
+    }
+    .contact-icon:hover {
+      color: #ab7b00;
+    }
+  }
+}
+@media (max-width: 600px) {
+  .contact-us-wrapper {
+    display: none;
+  }
+}

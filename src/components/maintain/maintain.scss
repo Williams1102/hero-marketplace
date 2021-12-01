@@ -1,0 +1,85 @@
+.maintain-wrapper {
+  height: 100%;
+  background: rgba(24, 21, 52, 1);
+  padding-bottom: 250px;
+  @media (max-width: 768px) {
+    padding-bottom: 350px;
+  }
+  .bg-fade-layer1 {
+    background-position: 50% -35%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background: linear-gradient(
+        0deg,
+        rgba(59, 52, 118, 0.7) 0%,
+        rgba(59, 52, 118, 0) 80.19%
+      ),
+      #2e2c3e;
+    height: 100%;
+    position: absolute;
+    width: 100%;
+  }
+  .bg-fade-layer2 {
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+      url("/images/herodetail/hero-detail-rockbg_tiny.png");
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    position: absolute;
+    width: 100%;
+    opacity: 0.3;
+  }
+  .bg-fade-layer3 {
+    background: linear-gradient(
+      180deg,
+      #181534 19.85%,
+      rgba(24, 21, 52, 0.722429) 54.58%,
+      rgba(24, 21, 52, 0) 93.3%
+    );
+    mix-blend-mode: normal;
+    opacity: 0.6;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+  }
+  .bg-head {
+    background: url("/images/account/bg1.png");
+    height: 500px;
+    background-position: 50% 30%;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .maintain-tab {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center !important;
+    position: relative;
+    z-index: 0;
+    text-align: center;
+    span {
+      font-family: "Rajdhani", sans-serif;
+      color: white;
+      font-size: 48px;
+      line-height: 61px;
+      margin-top: 40px;
+    }
+    // @media (max-width: 550px) {
+    //   span {
+    //     font-size: 40px;
+    //   }
+    // }
+    // @media (max-width: 420px) {
+    //   span {
+    //     font-size: 32px;
+    //   }
+    // }
+    // @media (max-width: 320px) {
+    //   span {
+    //     font-size: 28px;
+    //   }
+    // }
+  }
+}

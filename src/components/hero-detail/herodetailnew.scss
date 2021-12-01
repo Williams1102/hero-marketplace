@@ -1,0 +1,1139 @@
+.herodetail-pop-up {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  opacity: 0.5;
+}
+.head-bg {
+  background-image: url("/images/herodetail/headbg_tiny.png");
+  height: 710px;
+  position: absolute;
+  width: 100%;
+  z-index: 1;
+  background-size: cover;
+  background-position: 50% 50%;
+}
+.head-bg-layer {
+  background-image: url("/images/herodetail/headheadbg_tiny.png");
+  height: 700px;
+  position: absolute;
+  width: 100%;
+  z-index: 1;
+  background-size: cover;
+  opacity: 0.4;
+}
+.hero-detail-bg {
+  background-position: 50% -35%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background: linear-gradient(
+      0deg,
+      rgba(59, 52, 118, 0.7) 0%,
+      rgba(59, 52, 118, 0) 80.19%
+    ),
+    #2e2c3e;
+  height: 100%;
+  position: absolute;
+  width: 100%;
+}
+.hero-detail-bg-rock {
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url("/images/herodetail/hero-detail-rockbg_tiny.png");
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  z-index: 0;
+  //margin-top: 470px;
+  opacity: 0.15;
+}
+.hero-detail-container {
+  // background: linear-gradient(
+  //     0deg,
+  //     rgba(59, 52, 118, 0.7) 0%,
+  //     rgba(59, 52, 118, 0) 80.19%
+  //   ),
+  //   #2e2c3e;
+  position: relative;
+  z-index: 2;
+
+  //opacity: 0.4;
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-bottom: 250px;
+  //background-color: black;
+
+  span.font-face-ac {
+    font-weight: 400;
+    font-size: 34px;
+    line-height: 107px;
+    color: #ffffff;
+  }
+  .title-table {
+    font-family: Rajdhani;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 48px;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 35px;
+  }
+  .hero-detail-info-container {
+    display: flex;
+    padding-top: 100px;
+    padding-bottom: 120px;
+    @media screen and (max-width: 1000px) {
+      display: grid;
+    }
+    .hero-detail-info-left {
+      padding-top: 80px;
+      display: flex;
+      width: 75%;
+      min-height: 51.8vh;
+      //this min-height set is for when hero url is empty and not showing anything so the footer wont get up to the middle of the page
+      .hero-detail-pic-skills {
+        padding-top: 70px;
+        width: 70%;
+      }
+      .hero-detail-button-back {
+        display: flex;
+        width: 10%;
+        background: transparent;
+        border: none;
+        .btn-back {
+          font-family: Rajdhani;
+          font-style: normal;
+          color: #ffffff;
+          margin-top: 5px;
+        }
+        span {
+          padding: 5px;
+          margin-right: 15.5px;
+          font-family: "Montserrat", sans-serif;
+          font-weight: 500;
+          font-size: 16px;
+          line-height: 24px;
+        }
+      }
+      .hero-detail-hero-name {
+        span {
+          font-weight: 400;
+          font-size: 90px;
+          line-height: 107px;
+          color: #ffffff;
+        }
+        .hero-detail-number {
+          margin-top: 3vw;
+          width: 85.4px;
+          height: 33.6px;
+          border-radius: 4px;
+          background-color: #fddc17;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          span {
+            font-family: "DM Serif Display", serif;
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 28px;
+            color: #292011;
+          }
+        }
+        .hero-detail-hero-image-container {
+          position: relative;
+          width: 70%;
+          margin: 0 auto;
+          margin-top: 50px;
+          display: flex;
+          justify-content: center;
+          & > img {
+            width: 85%;
+            position: absolute;
+          }
+        }
+        .hero-detail-hero-skills {
+          display: flex;
+          width: 424px;
+          //width: 47.5%;
+          margin: 0 auto;
+          margin-top: 1vw;
+          @media screen and (max-width: 1000px) {
+            grid-template-columns: 1fr 1fr;
+          }
+          .hero-skill-bg {
+            width: 80px;
+            height: 82px;
+            padding: 2px;
+            background: linear-gradient(180deg, #6c625e 0%, #372a1b 100%);
+            border-radius: 4px;
+            margin: 0 13px;
+            :focus {
+              //background: #ffcf3d;
+              border-radius: 4px;
+              //margin-top: -1px;
+              border: 1px solid #ffcf3d;
+              background: transparent;
+              margin-left: -1px;
+              position: relative;
+              z-index: 0;
+            }
+          }
+          .hero-skill-bg:focus {
+            border: solid 1px #ffcf3d;
+          }
+          .hero-skill {
+            height: 80px;
+            width: 80px;
+
+            button {
+              background: transparent;
+              text-align: center;
+              width: 80px;
+              height: 80px;
+              /* margin-top: -56px; */
+              //margin-top: -100%;
+              position: relative;
+              border: none;
+            }
+            //margin: 0 13px;
+            &-image {
+              margin-top: -120px;
+              height: 76px;
+              width: 76px;
+            }
+            &-title {
+              color: #fff;
+              font-weight: 600;
+              margin-top: 10px;
+              white-space: nowrap;
+              width: 100%;
+              overflow: hidden;
+              text-overflow: ellipsis;
+              padding: 5px;
+            }
+            &-description {
+              color: #fff;
+              margin-top: 10px;
+              padding: 5px;
+            }
+          }
+        }
+        .skill-des {
+          width: 424px;
+          margin: 0 auto;
+          margin-top: 20px;
+          background: rgba(158, 147, 46, 0.08);
+          border: 1px solid #ffcf3d;
+          padding: 20px 0;
+          padding-left: 16px;
+          padding-right: 33px;
+          border-radius: 8px;
+          color: #fff;
+          .hero-skill-title {
+            margin-bottom: 4px;
+            font-family: Open Sans;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 24px;
+          }
+          .hero-skill-description {
+            font-family: Open Sans;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 10px;
+            line-height: 18px;
+          }
+        }
+      }
+      .hero-detail-stat {
+        position: relative;
+        padding: 0 40px;
+        width: 35%;
+        padding-top: 175px;
+        .price {
+          margin-top: 32px;
+          margin-bottom: -4px;
+          font-family: Rajdhani;
+          font-style: normal;
+          font-weight: bold;
+          font-size: 36px;
+          line-height: 40px;
+          letter-spacing: -0.02em;
+          text-transform: uppercase;
+          color: #ffffff;
+          //display: flex;
+          .buyprice {
+            font-family: Rajdhani;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 36px;
+            line-height: 40px;
+            letter-spacing: -0.02em;
+            text-transform: uppercase;
+            color: #ffffff;
+          }
+          .token {
+            padding: 5px;
+            position: relative;
+            display: flex;
+            float: right;
+            &-text {
+              margin-right: 5px;
+              font-family: Open Sans;
+              font-style: normal;
+              font-weight: bold;
+              font-size: 18px;
+              line-height: 24px;
+              color: #ffffff;
+            }
+          }
+        }
+        .hero-name {
+          font-family: Rajdhani;
+          font-style: normal;
+          font-weight: bold;
+          font-size: 64px;
+          line-height: 76px;
+          color: #ffffff;
+        }
+        .hero-detail-number {
+          span {
+            background: #4f3d0b;
+            padding: 4px 8px;
+            border: solid 1px #755515;
+            color: #f9da9c;
+            border-radius: 4px;
+          }
+        }
+        .ele-type-bg {
+          margin-top: 32px;
+          margin-bottom: 30px;
+        }
+        .ele-type {
+          display: flex;
+          .ele {
+            // position: relative;
+            // float: left;
+            display: block;
+            width: 50%;
+            .content {
+              span {
+                margin-left: 5px;
+                font-family: Open Sans;
+                font-style: normal;
+                font-weight: bold;
+                font-size: 14px;
+                line-height: 20px;
+                color: #ffffff;
+              }
+            }
+          }
+          .type {
+            width: 50%;
+            position: relative;
+            float: right;
+            text-align: center;
+          }
+          &-title {
+            margin-bottom: 8px;
+            font-family: Open Sans;
+            font-style: normal;
+            font-weight: normal;
+            color: #fff;
+          }
+        }
+        .hero-detail-info {
+          .info-field {
+            //display: flex;
+            padding: 14px 0;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+            &-content {
+              position: relative;
+              float: right;
+              display: flex;
+              color: #fff;
+            }
+            &-title {
+              font-family: Open Sans;
+              font-style: normal;
+              font-weight: normal;
+              color: #fff;
+            }
+          }
+        }
+        .action-btn {
+          margin-top: 60px;
+          margin-right: 8px;
+          background: #fbb501;
+          width: 140px;
+          height: 50px;
+          border: 3px solid rgba(94, 186, 137, 0.3);
+          border-radius: 8px;
+          font-family: Rajdhani;
+          font-style: normal;
+          font-weight: bold;
+          font-size: 16px;
+          line-height: 24px;
+          color: white;
+        }
+        .hero-detail-stats-info {
+          .stats-info-field {
+            padding: 14px 0;
+            padding-bottom: 8px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+            .info-field-title {
+              font-family: Open Sans;
+              font-style: normal;
+              font-weight: normal;
+              font-size: 14px;
+              line-height: 24px;
+              text-transform: uppercase;
+              color: #ffffff;
+            }
+            .info-field-content {
+              font-family: Open Sans;
+              font-style: normal;
+              font-weight: bold;
+              font-size: 14px;
+              line-height: 20px;
+              color: #ffffff;
+              float: right;
+              display: flex;
+              .content-icon {
+                margin-right: 5px;
+              }
+              img {
+                width: 20px;
+                height: 20px;
+              }
+            }
+          }
+          .last {
+            border-bottom: none;
+          }
+        }
+        .owner-btn {
+          .list-actual {
+            min-width: 140px;
+          }
+          .gift {
+            margin-right: 8px;
+          }
+          .upgradestar {
+            min-width: 140px;
+            background-color: #32ba7c !important;
+          }
+        }
+      }
+    }
+    .hero-detail-info-right {
+      padding-top: 20%;
+      width: 25%;
+      display: flex;
+      flex-direction: column;
+      @media screen and (max-width: 1000px) {
+        width: 70%;
+      }
+      .text-right {
+        margin-left: 60px;
+        font-family: Open Sans;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 24px;
+        color: white;
+      }
+      .gem-image {
+        position: relative;
+        img {
+          width: 5vw;
+          position: absolute;
+          top: 31.5%;
+        }
+        background-size: contain;
+        background-repeat: no-repeat;
+        width: 30vw;
+        height: calc(727 / 756 * 30vw);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        //height: 340px;
+      }
+      span.font-face-ac {
+        font-family: Open Sans;
+        font-style: normal;
+        font-weight: bold;
+        margin-top: 30px;
+        font-size: 15px;
+        line-height: 32px;
+        color: #f9da9c;
+        font-weight: 400;
+      }
+      span.montserrat-font-span {
+        font-family: Open Sans;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 24px;
+        color: white;
+      }
+      .hero-detail-owner-info {
+        margin-top: 30px;
+        background: #161616;
+        display: flex;
+        justify-content: space-between;
+        padding-top: 16px;
+        padding-bottom: 16px;
+        .owner-info-field {
+          overflow: hidden;
+          text-overflow: ellipsis;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          width: 20%;
+          span.info-field-title {
+            font-size: 23px;
+            line-height: 34px;
+            color: #838383;
+            font-weight: 400;
+            font-family: "Montserrat", sans-serif;
+          }
+          .info-field-content {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+            width: 100%;
+
+            span {
+              font-family: "DM Serif Display", serif;
+              font-size: 25px;
+              line-height: 28px;
+              font-weight: 400;
+              color: #ffffff;
+            }
+          }
+        }
+      }
+      .hero-detail-owner-info {
+        background: #161616;
+        display: flex;
+        justify-content: space-between;
+        padding-top: 16px;
+        padding-bottom: 16px;
+        .owner-info-field {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          width: 20%;
+          span.info-field-title {
+            font-size: 20px;
+            line-height: 31px;
+            color: #838383;
+            font-weight: 400;
+            font-family: "Montserrat", sans-serif;
+          }
+          .info-field-content {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+            span {
+              font-family: "DM Serif Display", serif;
+              font-size: 25px;
+              line-height: 28px;
+              font-weight: 400;
+              color: #ffffff;
+            }
+            img {
+              width: 18%;
+            }
+          }
+        }
+      }
+      .hero-detail-owner-info {
+        background: #161616;
+        display: flex;
+        justify-content: space-between;
+        padding-top: 16px;
+        padding-bottom: 16px;
+        .owner-info-field {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          width: 20%;
+          span.info-field-title {
+            font-size: 20px;
+            line-height: 31px;
+            color: #838383;
+            font-weight: 400;
+            font-family: "Montserrat", sans-serif;
+            @media screen and (max-width: 1000px) {
+              font-size: 19px;
+            }
+          }
+          .info-field-content {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+            span {
+              font-family: "DM Serif Display", serif;
+              font-size: 25px;
+              line-height: 28px;
+              font-weight: 400;
+              color: #ffffff;
+              @media screen and (max-width: 1000px) {
+                font-size: 17px;
+              }
+            }
+            img {
+              width: 18%;
+            }
+          }
+        }
+      }
+      .hero-detail-stats-info {
+        display: flex;
+        justify-content: space-between;
+        padding-top: 16px;
+        padding-bottom: 16px;
+        .stats-info-field {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          width: 20%;
+          span.info-field-title {
+            font-size: 20px;
+            line-height: 31px;
+            color: #838383;
+            font-weight: 400;
+            font-family: "Montserrat", sans-serif;
+            @media screen and (max-width: 1000px) {
+              font-size: 19px;
+            }
+          }
+          .info-field-content {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+            span {
+              font-family: "DM Serif Display", serif;
+              font-size: 25px;
+              line-height: 28px;
+              font-weight: 400;
+              color: #ffffff;
+              @media screen and (max-width: 1000px) {
+                font-size: 17px;
+              }
+            }
+            img {
+              width: 50%;
+            }
+          }
+        }
+      }
+    }
+  }
+  .table-scroll-offer {
+    height: 165px;
+  }
+  .TableScrollbar {
+    border-radius: 12px;
+    border: solid 1px #191335;
+    margin-bottom: 70px;
+    //height: 165px !important;
+    table {
+      width: 100%;
+    }
+    tbody {
+      //display: flex;
+      background: #2c2741;
+      align-items: center;
+      justify-content: space-around;
+      color: #201a1a;
+      tr {
+        border-bottom: 1px solid #191335;
+        td {
+          text-align: center;
+          width: 20%;
+          font-weight: 500;
+          font-size: 23px;
+          line-height: 34px;
+          color: #fff;
+          font-family: Open Sans;
+          padding: 14px 0;
+        }
+        .td1 {
+          display: flex;
+          padding-left: 30px;
+          .icon {
+            margin-right: 10px;
+          }
+        }
+      }
+    }
+    .ya {
+      z-index: 0;
+      position: relative;
+    }
+    thead {
+      //display: flex;
+      background: #3a364e;
+      border-radius: 12px 12px 0px 0px;
+      //align-items: center;
+      //justify-content: space-around;
+      color: #ffffff;
+      tr {
+        border-radius: 12px 12px 0px 0px;
+        th {
+          padding: 16px 0;
+          width: 20%;
+          font-family: Open Sans;
+          font-weight: 600;
+          font-size: 23px;
+          line-height: 34px;
+          text-align: center;
+        }
+        .th1 {
+          text-align: start;
+          padding-left: 30px;
+        }
+      }
+    }
+  }
+  .table-bg {
+    border-radius: 12px;
+  }
+  .hero-detail-history-title {
+    padding: 16px 0;
+    border: solid 1px #191335;
+    border-bottom: none;
+    width: 100%;
+    display: flex;
+    background: #3a364e;
+    border-radius: 12px 12px 0px 0px;
+    align-items: center;
+    justify-content: space-around;
+    color: #ffffff;
+    .th-title {
+      width: 20%;
+      font-family: "Montserrat", sans-serif;
+      font-weight: 700;
+      font-size: 23px;
+      line-height: 34px;
+    }
+    .col-3 {
+      text-align: center;
+      font-size: 23px;
+      line-height: 34px;
+      font-family: Open Sans;
+      font-style: normal;
+      font-weight: 600;
+    }
+  }
+  .hero-detail-history-content {
+    border: solid 1px #191335;
+    border-top: none;
+    display: flex;
+    background: #2c2741;
+    align-items: center;
+    justify-content: space-around;
+    color: #ffffff;
+    .col-3 {
+      font-family: Open Sans;
+      color: #ffffff;
+      font-weight: 500;
+      font-size: 23px;
+      line-height: 34px;
+      text-align: center;
+      padding: 18px 0;
+      .acc-address {
+        width: 100%;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+    }
+    .content-col {
+      width: 20%;
+      font-family: "Montserrat", sans-serif;
+      font-weight: 500;
+      font-size: 23px;
+      line-height: 34px;
+    }
+    .content-col1 {
+      display: flex;
+      width: 20%;
+      font-family: "Montserrat", sans-serif;
+      font-weight: 500;
+      font-size: 23px;
+      line-height: 34px;
+      .icon {
+        margin-left: 15px;
+        margin-right: 10px;
+      }
+    }
+  }
+
+  .offer-btn {
+    margin-top: 30px;
+    margin-bottom: 50px;
+    background: transparent;
+    padding: 10px;
+    border: #fddc17 1px solid;
+    color: #fddc17 !important;
+    border-radius: 10px;
+    width: auto;
+    &:focus {
+      color: #fddc17 !important;
+    }
+    &.take {
+      border: #fbb501 1px solid;
+      color: #fbb501 !important;
+      // border: #73fd17 1px solid;
+      // color: #73fd17 !important;
+    }
+    &.cancel {
+      border: #dc3545 1px solid;
+      color: #dc3545 !important;
+    }
+    span {
+      font-family: Rajdhani;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 23px;
+      line-height: 34px;
+    }
+  }
+}
+
+.gem-container {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
+.over-flow-eclipsis {
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+@media (max-width: 1600px) {
+  .hero-detail-container {
+    .hero-detail-info-container {
+      .hero-detail-info-left {
+        .hero-detail-stat {
+          width: 45%;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 1400px) {
+  .hero-detail-container {
+    .hero-detail-info-container {
+      display: block;
+      .hero-detail-info-left {
+        width: 100%;
+        .hero-detail-hero-name {
+          .hero-detail-hero-image-container {
+            width: 90%;
+          }
+          .skill-des {
+            .hero-skill-title {
+              font-size: 18px;
+            }
+            .hero-skill-description {
+              padding-top: 6px;
+              font-size: 14px;
+            }
+          }
+        }
+        .hero-detail-stat {
+          width: 45%;
+          .owner-btn {
+            .action-btn {
+              min-width: 120px;
+            }
+          }
+        }
+      }
+      .hero-detail-info-right {
+        width: 100%;
+        padding-top: 15%;
+        span.font-face-ac {
+          font-size: 20px;
+        }
+        .ownertext {
+          font-size: 16px;
+        }
+        .text-right {
+          margin-left: 20vw;
+        }
+        .gem-container {
+          .gem-image {
+            width: 40vw;
+            height: calc(727 / 756 * 40vw);
+            img {
+              width: 9vw;
+              top: 42.5%;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 1200px) {
+  .hero-detail-container {
+    .hero-detail-info-container {
+      display: block;
+      .hero-detail-info-left {
+        width: 100%;
+        .hero-detail-stat {
+          width: 48%;
+          .owner-btn {
+            .action-btn {
+              min-width: 120px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 991px) {
+  .hero-detail-container {
+    .hero-detail-info-container {
+      .hero-detail-info-left {
+        display: block;
+        .hero-detail-pic-skills {
+          width: 100%;
+          .hero-detail-hero-name {
+            .hero-detail-hero-image-container {
+              width: 100%;
+            }
+            .hero-detail-hero-skills {
+              margin-top: 20px;
+            }
+          }
+        }
+        .hero-detail-stat {
+          width: 50%;
+          margin: 0 auto;
+          padding: 0;
+          padding-top: 175px;
+          .action-btn {
+            position: absolute;
+            top: 0;
+            left: 28%;
+          }
+          .owner-btn {
+            display: flex;
+            .list {
+              position: absolute;
+              top: 0;
+              left: 0%;
+            }
+            .list-actual {
+              position: absolute;
+              top: 0;
+              left: 0%;
+            }
+            .gift {
+              position: absolute;
+              top: 0;
+              left: 115px;
+              margin-left: 20%;
+            }
+            .upgradestar {
+              top: 60px;
+              left: 0;
+              margin-left: 23%;
+            }
+          }
+        }
+      }
+      .hero-detail-info-right {
+        padding-top: 5%;
+        width: 60%;
+        margin: 0 auto;
+        .text-right {
+          margin-left: 0;
+        }
+      }
+    }
+    .TableScrollbar {
+      tbody {
+        tr {
+          td {
+            font-size: 16px;
+            white-space: nowrap;
+            // overflow: hidden;
+            // text-overflow: ellipsis;
+            padding-left: 10px;
+            padding-right: 10px;
+            .offer-btn {
+              min-width: 80px !important;
+              span {
+                font-size: 15px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 750px) {
+  .hero-detail-container {
+    .hero-detail-info-container {
+      .hero-detail-info-left {
+        .hero-detail-stat {
+          width: 70%;
+          margin: 0 auto;
+          padding: 0;
+          padding-top: 175px;
+        }
+      }
+      .hero-detail-info-right {
+        .gem-container {
+          .gem-image {
+            width: 50vw;
+            height: calc(727 / 756 * 50vw);
+            img {
+              width: 11vw;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 600px) {
+  .content-app {
+    .layout-content {
+      .hero-detail-container {
+        .hero-detail-info-left {
+          .hero-detail-stat {
+            .owner-btn {
+              .upgradestar {
+                top: 60px;
+                left: 0;
+                margin-left: 30%;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 500px) {
+  .hero-detail-container {
+    .hero-detail-info-container {
+      .hero-detail-info-left {
+        .hero-detail-hero-name {
+          .hero-detail-hero-skills {
+            width: 376px;
+            .hero-skill-bg {
+              margin: 0 6px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 450px) {
+  .hero-detail-container {
+    .hero-detail-info-container {
+      .hero-detail-info-left {
+        .hero-detail-stat {
+          width: 90%;
+          margin: 0 auto;
+          padding: 0;
+          padding-top: 175px;
+        }
+        .hero-detail-pic-skills {
+          .hero-detail-hero-name {
+            .hero-detail-hero-image-container {
+              img {
+                width: 100%;
+              }
+            }
+            .skill-des {
+              width: 340px;
+            }
+          }
+        }
+      }
+      .hero-detail-info-right {
+        width: 90%;
+        .gem-container {
+          .gem-image {
+            width: 85vw;
+            height: calc(727 / 756 * 85vw);
+            img {
+              width: 19vw;
+              top: 40%;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 400px) {
+  .content-app {
+    .layout-content {
+      .hero-detail-container {
+        padding-left: 1%;
+        padding-right: 1%;
+        .hero-detail-info-container {
+          .hero-detail-info-left {
+            .hero-detail-pic-skills {
+              .hero-detail-hero-skills {
+                margin-left: -7px;
+              }
+            }
+          }
+          .hero-detail-info-right {
+            .gem-container {
+              img {
+                top: 42%;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.spinner-loading {
+  margin-right: 10px !important;
+}
+
+.approve-market {
+  margin-top: 60px !important;
+  margin-right: 60px;
+  min-width: 170px;
+  height: 50px;
+  span {
+    font-size: 15px !important;
+  }
+}
+.gift {
+  min-width: 140px;
+}

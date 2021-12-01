@@ -1,0 +1,14 @@
+version: "3.3"
+
+services:
+  web:
+    restart: unless-stopped
+    image: kaby-web
+    build:
+      context: .
+      dockerfile: ./proxy/Dockerfile
+      args:
+        custom_env: dev
+        custom_name: web
+    ports:
+      - "80:80"

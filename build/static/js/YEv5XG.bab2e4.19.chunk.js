@@ -1,0 +1,2 @@
+(this["webpackJsonpmarketplace-game-nfts"]=this["webpackJsonpmarketplace-game-nfts"]||[]).push([[19],{1120:function(e,t,n){"use strict";n.r(t);n(2);var a=n(26),c=n(25);t.default=function(){var e=Object(a.g)();return Object(c.jsxs)("div",{className:"page-not-found",children:[Object(c.jsx)("h1",{className:"title-not-found",children:"404 - Page Not Found"}),Object(c.jsx)("div",{className:"btn-home-page",children:Object(c.jsx)("div",{onClick:function(){e.push("/")},children:"Go to HomePage"})})]})}}}]);
+//# sourceMappingURL=YEv5XG.bab2e4.19.chunk.js.map
